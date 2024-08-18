@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a:link{
+	color:black;
+    text-decoration: none;
+}
+a:visited {
+	color:black;
+    text-decoration: none;
+}
+a:hover {
+	color:black;
+	text-decoration: none;
+}
+a:active{
+	color:black;
+	text-decoration: none;	
+}
+
+header {
+    width: 100%;
+    height: 190px;
+    margin: 2px;
+    border: solid 2px #888888;
+    text-align: center;
+}
+header #logo {
+    display: block;
+    margin: 0 auto;
+}
+header #search {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+.search-txt {
+    height: 35px;
+    width: 400px; 
+    font-size: 16px;
+    margin-right: 10px;
+    padding: 0 10px;
+}
+.search-btn {
+    height: 35px;
+    width: 100px; 
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+}
+main {
+    width: 100%;
+    text-align:center;
+}
+main #prd-inf {
+    font-size:30px;
+    border: solid 2px #888888;
+    width:300px;
+    margin-left:330px;
+    margin-top:20px;
+}
+main #main-img {
+    width:492px;
+    height:492px;
+    margin-top:30px;
+    margin-right:350px;
+}
+main #category {
+    position:relative;
+    border: solid 2px #888888;
+    display: inline-block;
+    width:400px;
+    height:25px;
+    right:308px;
+    bottom:470px;
+    text-align:left;
+    
+}
+main #prd-name {
+    position:absolute;
+    border: solid 2px #888888;
+    display: inline-block;
+    width:600px;
+    height:90px;
+    right:435px;
+    bottom:480px;
+    text-align:left;
+    font-size:26px;
+}
+main #prd-name a:link{
+	color:black;
+    text-decoration: none;
+}
+main #prd-name a:visited {
+	color:black;
+    text-decoration: none;
+}
+main #prd-name a:hover {
+	color:black;
+	text-decoration: none;
+}
+main #prd-name a:active{
+	color:black;
+	text-decoration: none;	
+}
+main #price {
+    position:absolute;
+    border: solid 2px #888888;
+    display: inline-block;
+    width:600px;
+    height:60px;
+    right:435px;
+    bottom:410px;
+    text-align:left;
+    font-size:26px;
+}
+main #price hr {
+    margin-top: 20px;
+}
+main #price-avg {
+    position:absolute;
+    border: solid 2px #888888;
+    display: inline-block;
+    width:600px;
+    height:100px;
+    right:435px;
+    bottom:300px;
+    text-align:left;
+    font-size:18px;
+}
+main #price-avg hr {
+    margin-top: 20px;
+}
+main #musinsa-link {
+    position:absolute;
+    display: inline-block;
+    width:600px;
+    height:40px;
+    right:435px;
+    bottom:120px;
+    color:#ffffff;
+    background-color: #DC3936;
+    text-align:center;
+    font-size:18px;
+    line-height:40px;
+}
+main #musinsa-link a:link{
+	color:white;
+    text-decoration: none;
+}
+main #musinsa-link a:visited {
+	color:white;
+    text-decoration: none;
+}
+main #musinsa-link a:hover {
+	color:white;
+	text-decoration: none;
+}
+main #musinsa-link a:active{
+	color:white;
+	text-decoration: none;	
+}
+main #price-graph {
+    font-size:30px;
+    border: solid 2px #888888;
+    width:300px;
+    margin-left:330px;
+    margin-top:20px;
+}
+main #graph {
+    position:relative;
+    border: solid 2px #888888;
+    width:1100px;
+    height:500px;
+    margin-left:330px;
+}
+footer {
+    text-align: center;
+}
