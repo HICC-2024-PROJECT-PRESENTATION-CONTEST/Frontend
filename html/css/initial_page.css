@@ -30,7 +30,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
 }
 
 .home-icon img,
@@ -71,7 +71,7 @@ header {
 }
 
 .search-button img {
-  width: 1.5em;
+  width: 1.14em;
   height: auto;
 }
 
@@ -95,7 +95,7 @@ footer {
   color: #999;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .search-bar {
     width: 100%;
     flex-direction: column;
