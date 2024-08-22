@@ -74,7 +74,7 @@ body {
     }
 }
 /* 너비가 768픽셀 이상인 데스크톱 컴퓨터, 노트북 등 */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
     .c_1 {
         width: 8.33%;
     }
@@ -151,82 +151,6 @@ a:active {
     color: #000000;
     text-decoration: none;
 }
-
-
-header {
-    height: 150px;
-    margin: 2px;
-    text-align: center;
-    width: 100%;
-}
-
-header #logo {
-        width: 40%;
-        display: inline-block;
-    }
-
-header #home {
-        width: 20%;
-        display: inline-block;
-    }
-
-header #my {
-        width: 20%;
-        display: inline-block;
-    }
-
-@media only screen and (max-width: 768px) {
-header #logo {
-        width: 75%;
-}
-
-header #home {
-    width: 10%;
-}
-
-header #my {
-    width: 10%;
-}
-}
-
-#search {
-
-}
-
-
-.search-txt {
-    position:relative;
-    left:20px;
-    height: 50px;
-    width: 50%;
-    font-size: 16px;
-    margin-top: 10px;
-    padding: 0 20px;
-    border-radius: 25px;
-    color: #868E96;
-    border: none;
-}
-
-.search-btn {
-    position: relative;
-    right: 30px;
-    top: 7px;
-    height: 25px;
-    border: none;
-    background-color: #ffffff;
-}
-
-.search-btn img {
-    position: relative;
-    height: 25px;
-}
-
-@media only screen and (max-width: 768px) {
-    .search-txt {
-        width: 90%; /* 너비 100% 설정 */
-    }
-}
-
 aside {
 }
     /* 기본 설정: 768px 미만일 때 */
@@ -240,7 +164,7 @@ aside {
         }
 
 /* 너비가 768픽셀 이상인 경우 */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
     aside li.img {
         text-align: right; /* 768px 이상일 때 오른쪽 정렬 */
     }
@@ -284,7 +208,7 @@ section #prd-name {
     padding-bottom: 5px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
     section #prd-name {
         width: 70%; /* 너비 100% 설정 */
     }
@@ -306,7 +230,7 @@ section #musinsa-link {
     margin-top: 16px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
     section #musinsa-link {
         width: 18%; /* 너비 100% 설정 */
         height: 32px;
@@ -332,7 +256,7 @@ section #price {
     font-size: 24px;
     padding-bottom: 10px;
     text-align: right;
-    width: 30%;
+    width: 68%;
     height: 26px;
     float: right;
     display: inline-block;
@@ -341,6 +265,7 @@ section #price {
 
 section #price-graph {
     width: 100%;
+
 }
 
 section #graph {
@@ -355,9 +280,10 @@ section #graph-inf {
     text-align: right;
     display: inline-block;
     float: right;
+
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
     section #price-graph {
         width: 68%;
     }
@@ -389,26 +315,3 @@ main {
 main #recommend {
     }
 
-footer {
-    text-align: center;
-}
-
-    footer a:link {
-        color: #868E96;
-        text-decoration: none;
-    }
-
-    footer a:visited {
-        color: #868E96;
-        text-decoration: none;
-    }
-
-    footer a:hover {
-        color: #868E96;
-        text-decoration: none;
-    }
-
-    footer a:active {
-        color: #868E96;
-        text-decoration: none;
-    }
