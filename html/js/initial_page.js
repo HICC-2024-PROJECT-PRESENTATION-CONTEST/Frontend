@@ -1,4 +1,3 @@
-script.js;
 function getCurrentDate() {
   const today = new Date();
   const year = today.getFullYear().toString().slice(2);
