@@ -1,6 +1,57 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+ul {
+    list-style-type: none;
+}
+body {
+    font-size : 100%;   
+}
+[class*="c_"] {
+    float: left;
+    padding: 10px;
+}
+/* 너비가 600픽셀 미만인 스마트폰을 위한 기본 설정 */
+[class*="c_"] {
+    width: 100%;
+}
+/* 너비가 600픽셀 이상인 태블릿을 위한 설정 */
+@media only screen and (min-width: 600px) {
+    .c_m_1 {width: 8.33%;}
+    .c_m_2 {width: 16.66%;}
+    .c_m_3 {width: 25%;}
+    .c_m_4 {width: 33.33%;}
+    .c_m_5 {width: 41.66%;}
+    .c_m_6 {width: 50%;}
+    .c_m_7 {width: 58.33%;}
+    .c_m_8 {width: 66.66%;}
+    .c_m_9 {width: 75%;}
+    .c_m_10 {width: 83.33%;}
+    .c_m_11 {width: 91.66%;}
+    .c_m_12 {width: 100%;}
+}
+/* 너비가 768픽셀 이상인 데스크톱 컴퓨터, 노트북 등 */
+@media only screen and (min-width: 768px) {
+    .c_1 {width: 8.33%; }
+    .c_2 {width: 16.66%; }
+    .c_3 {width: 25%; }
+    .c_4 {width: 33.33%; }
+    .c_5 {width: 45%; }
+    .c_6 {width: 50%; }
+    .c_7 {width: 55%; }
+    .c_8 {width: 66.66%; }
+    .c_9 {width: 75%; }
+    .c_10 {width: 83.33%; }
+    .c_11 {width: 91.66%; }
+    .c_12 {width: 100%; }
+    aside {
+        text-align: right;
+    }
+    aside .img_m .img img {
+        width: 50%; /* 이미지 너비 조정 */
+    }
 }
 a:link{
 	color:black;
@@ -20,20 +71,12 @@ a:active{
 }
 
 header {
-    width: 100%;
-    height: 190px;
+    height: 150px;
     margin: 2px;
-    border: solid 2px #888888;
     text-align: center;
 }
 header #logo {
-    display: block;
     margin: 0 auto;
-}
-header #search {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
 }
 .search-txt {
     height: 35px;
@@ -50,132 +93,104 @@ header #search {
     background-color: #000000;
     border: none;
 }
-main {
-    width: 100%;
-    text-align:center;
+
+aside {
 }
-main #prd-inf {
-    font-size:30px;
-    border: solid 2px #888888;
-    width:300px;
-    margin-left:330px;
-    margin-top:20px;
+/* 기본 설정: 768px 미만일 때 */
+aside li {
+    text-align: center; /* 기본적으로 가운데 정렬 */
 }
-main #main-img {
-    width:492px;
-    height:492px;
-    margin-top:30px;
-    margin-right:350px;
+
+/* 기본 설정: 768px 미만일 때 */
+aside li.img {
+    text-align: center; /* 기본적으로 가운데 정렬 */
 }
-main #category {
-    position:relative;
-    border: solid 2px #888888;
-    display: inline-block;
-    width:400px;
-    height:25px;
-    right:308px;
-    bottom:470px;
-    text-align:left;
+
+/* 너비가 768픽셀 이상인 경우 */
+@media only screen and (min-width: 768px) {
+    aside li.img {
+        text-align: right; /* 768px 이상일 때 오른쪽 정렬 */
+    }
+}
+aside img {
+    width: 50%; /* 또는 원하는 비율 */
+}
+
+
+section {
     
 }
-main #prd-name {
-    position:absolute;
-    border: solid 2px #888888;
-    display: inline-block;
-    width:600px;
-    height:90px;
-    right:435px;
-    bottom:480px;
-    text-align:left;
+section #category {
+    font-size:16px;
+    margin-bottom:20px;
+}
+section #prd-name {
     font-size:26px;
+    padding-bottom:5px;
 }
-main #prd-name a:link{
-	color:black;
-    text-decoration: none;
+section #price {
+    font-size:28px;
+    padding-bottom:10px;
+    
 }
-main #prd-name a:visited {
-	color:black;
-    text-decoration: none;
+section #price hr {
+    margin-top:30px;
 }
-main #prd-name a:hover {
-	color:black;
-	text-decoration: none;
+section #price-avg {
+    font-size:22px;
+    padding-top:10px;
 }
-main #prd-name a:active{
-	color:black;
-	text-decoration: none;	
+section #price-avg p {
+    padding-bottom:5px;
 }
-main #price {
-    position:absolute;
-    border: solid 2px #888888;
-    display: inline-block;
-    width:600px;
-    height:60px;
-    right:435px;
-    bottom:410px;
+section #price-avg hr {
+    margin-top:25px;
+}
+section #button {
     text-align:left;
-    font-size:26px;
+    margin-top:30px;
 }
-main #price hr {
-    margin-top: 20px;
-}
-main #price-avg {
-    position:absolute;
-    border: solid 2px #888888;
-    display: inline-block;
-    width:600px;
-    height:100px;
-    right:435px;
-    bottom:300px;
-    text-align:left;
-    font-size:18px;
-}
-main #price-avg hr {
-    margin-top: 20px;
-}
-main #musinsa-link {
-    position:absolute;
-    display: inline-block;
-    width:600px;
-    height:40px;
-    right:435px;
-    bottom:120px;
-    color:#ffffff;
-    background-color: #DC3936;
+section #call {
+    font-size:16px;
     text-align:center;
-    font-size:18px;
-    line-height:40px;
+    width:49%;
+    height:40px;
+    border:solid 2px #DC3936;
+    border-radius:3px;
+    display:inline-block;
+    background-color:#ffffff;
+
 }
-main #musinsa-link a:link{
-	color:white;
-    text-decoration: none;
+section #musinsa-link {
+    font-size:16px;
+    text-align:center;
+    width:49%;
+    height:40px;
+    border:solid 2px #DC3936;
+    border-radius:3px;
+    display:inline-block;
+    background-color: #DC3936;
 }
-main #musinsa-link a:visited {
-	color:white;
-    text-decoration: none;
+@media only screen and (min-width: 768px) {
+    section #call,
+    section #musinsa-link {
+        width: 34%; /* 너비 100% 설정 */
+    }
+    section #price hr,
+    section #price-avg hr {
+        width: 68%;
+    }
 }
-main #musinsa-link a:hover {
-	color:white;
-	text-decoration: none;
+
+main {
+    text-align:left;
 }
-main #musinsa-link a:active{
-	color:white;
-	text-decoration: none;	
+
+main #graph-inf {
+    
 }
-main #price-graph {
-    font-size:30px;
-    border: solid 2px #888888;
-    width:300px;
-    margin-left:330px;
-    margin-top:20px;
-}
-main #graph {
-    position:relative;
-    border: solid 2px #888888;
-    width:1100px;
-    height:500px;
-    margin-left:330px;
-}
+
 footer {
     text-align: center;
 }
+

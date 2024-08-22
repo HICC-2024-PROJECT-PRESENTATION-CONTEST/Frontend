@@ -7,7 +7,9 @@
 </head>
 <body>
 <header>
-    <img id="logo" src="img/임시로고.PNG" alt="Logo">
+    <div id = page-logo>
+        <img id="logo" src="img/임시로고.PNG" alt="Logo">
+    </div>
     <div id="search">
         <form action="" method="get">
             <input class="search-txt" type="text" name="" placeholder="브랜드명 입력">
@@ -15,17 +17,21 @@
         </form>
     </div>
 </header>
-<main>
-    <div id = "prd-inf">제품 기본 정보</div>
-    <img id = "main-img" src = "img/임시이미지.png" alt = "Main-Img">
+<aside class = "c_5">
+    <ul>
+        <li class = "img"><img src = "img/임시이미지.png"></li>
+    </ul>
+</aside>
+<section class = "c_7">
     <div id = "category">
-        카테고리 data
+        <a href = "#">카테고리 1</a> > <a href = "#">카테고리 2</a> > <a href = "#">카테고리 3</a> > <a href = "#">카테고리 4</a>
     </div>
     <div id = "prd-name">
         <a href = "#">브랜드명</a> 상품명 / 품번
     </div>
+    <br>
     <div id = "price">
-        x,xxx원
+        <b>x,xxx원</b>
         <hr>
     </div>
     <div id = "price-avg">
@@ -34,15 +40,24 @@
         <p style='line-height:30px;'>역대최저가 <span style = "color:red; line-height:20px;">x,xxx원</span></p>
         <hr>
     </div>
-    <div id = "musinsa-link">
-        <a href = "#">구매링크</a>
+    <div id = "button">
+        <div id = "call" style=" cursor: pointer;" onclick="window.open('#');">
+            <span style = "color:#DC3936; line-height:35px;">찜하기</span>
+        </div>
+        <div id = "musinsa-link" style=" cursor: pointer;" onclick="window.open('#');">
+            <span style = "color:white; line-height:35px;">구매링크</span>
+        </div>
     </div>
-    <div id = "price-graph">가격 추적 그래프</div>
+</section>
+<main class = "c_12">
+    <h3 id = "graph-inf">가격 그래프</h4>
     <div id = "graph">그래프 넣을 공간</div>
-
+    <h3 id = "recommend">추천 상품</h4>
+    <div id = "ai-recommend">유사 상품 데이터 공간</div>
 </main>
-<footer>
-    <a href = "#">개인정보처리방침</a> | <a href = "#">로그인</a>
+<footer class = "c_12">
+    <p><a href = "#">개인정보처리방침</a> | <a href = "#">로그인</a><p>
+    <p>email : <a href = "#">1234@gmail.com</a></p>
 </footer>
 </body>
 </html>
