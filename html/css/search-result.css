@@ -218,17 +218,21 @@ section li {
         width: 100%;
         height: 100%;
         padding: 0;
+
     }
 
     section li {
-        padding: 0 20px;
-        margin-left: 10px;
-        width: auto; /* 텍스트 요소의 너비 자동 조정 */
+        width: 80%; /* 너비를 80%로 설정하여 좌우 여백 생성 */
+        height: 0;
+        margin: 0 auto; /* 중앙 정렬 */
+        margin-bottom: 20px; /* 각 아이템 간의 세로 간격 추가 */
+
     }
     
 }
 
 section .brand-name {
+    margin-top:10px;
     font-size:16px;
 }
 
@@ -237,6 +241,7 @@ section .prd-name {
     height:50px;
 }
 section .price{
+    margin-top:10px;
     margin-bottom:20px;
     font-weight:bold;
 }
