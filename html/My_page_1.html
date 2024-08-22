@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Page 1</title>
     <link rel="stylesheet" href="css/My_page_1.css" />
     <link rel="stylesheet" type="text/css" href="css/header.css" />
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
-    <title>My Page 1</title>
+    <script defer src="js/header_button.js"></script>
   </head>
   <body>
     <header>
@@ -53,7 +54,7 @@
       <button onclick="navigateToPage2()">회원 정보 및 이용약관</button>
     </div>
 
-    <script>
+    <!-- <script>
       // Function to handle toggle change
       document
         .getElementById('mailToggle')
@@ -77,6 +78,11 @@
       function navigateToPage2() {
         window.location.href = 'My_page_2.html'; // Assuming you have a separate HTML for My_page_2
       }
-    </script>
+    </script> -->
+
+    <footer class="c_12">
+      <p><a href="#">개인정보처리방침</a></p>
+      <p>email : <a href="#">1234@gmail.com</a></p>
+    </footer>
   </body>
 </html>

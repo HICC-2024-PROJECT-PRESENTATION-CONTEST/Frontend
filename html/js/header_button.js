@@ -1,6 +1,6 @@
-document.getElementById('login-button').addEventListener('click', function () {
+document.getElementById('my').addEventListener('click', function () {
   window.location.href = 'login_page.html';
 });
-document.getElementById('home-button').addEventListener('click', function () {
+document.getElementById('home').addEventListener('click', function () {
   window.location.href = 'Initial_page.html';
 });
