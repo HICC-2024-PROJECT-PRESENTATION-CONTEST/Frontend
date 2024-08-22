@@ -92,7 +92,7 @@ body {
     }
 
     .c_5 {
-        width: 45%;
+        width: 42%;
     }
 
     .c_6 {
@@ -100,7 +100,7 @@ body {
     }
 
     .c_7 {
-        width: 55%;
+        width: 58%;
     }
 
     .c_8 {
@@ -185,7 +185,7 @@ header #home {
 }
 
 header #my {
-    width: 10%;
+    width: 20%;
 }
 }
 
@@ -308,8 +308,8 @@ section #musinsa-link {
 
 @media only screen and (min-width: 768px) {
     section #musinsa-link {
-        width: 15%; /* 너비 100% 설정 */
-        height: 25px;
+        width: 18%; /* 너비 100% 설정 */
+        height: 32px;
     }
 
     section #link_and_price {
