@@ -84,7 +84,7 @@ body {
     }
 
     .c_3 {
-        width: 22%;
+        width: 20%;
     }
 
     .c_4 {
@@ -247,7 +247,7 @@ aside {
 }
 
 aside img {
-    width: 50%; /* 또는 원하는 비율 */
+    width: 54%; /* 또는 원하는 비율 */
 }
 
 
@@ -329,7 +329,7 @@ section #musinsa-link {
 }
 
 section #price {
-    font-size: 26px;
+    font-size: 24px;
     padding-bottom: 10px;
     text-align: right;
     width: 30%;
