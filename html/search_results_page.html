@@ -5,16 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Search Results Page</title>
     <link rel="stylesheet" href="css/search_results_page.css" />
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="title">MUSINSA SCOUTER</div>
-      <div class="profile-icon">
-        <img src="profile-icon.png" alt="Profile Icon" />
+    <header>
+      <div id="page-logo">
+        <div id="home">
+          <img src="img/홈버튼.PNG" alt="home" />
+        </div>
+        <div id="logo">
+          <img src="img/임시로고.PNG" alt="Logo" />
+        </div>
+        <div id="my">
+          <img src="img/마이페이지.PNG" alt="my" />
+        </div>
       </div>
-      <div class="search-bar">
-        <input type="text" placeholder="상품명 or 상품 코드 검색" />
-        <button class="search-button">검색</button>
+      <div id="search">
+        <form action="" method="get">
+          <input
+            class="search-txt"
+            type="text"
+            name=""
+            placeholder="원하는 상품을 검색해보세요!"
+          />
+          <button class="search-btn" type="submit">
+            <img src="img/돋보기.png" />
+          </button>
+        </form>
       </div>
     </header>
     <main>

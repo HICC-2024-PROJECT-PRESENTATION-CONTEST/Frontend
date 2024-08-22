@@ -5,28 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Musinsa Scouter</title>
     <link rel="stylesheet" href="css/initial_page.css" />
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
   </head>
   <body>
     <header>
-      <div class="header-content">
-        <div class="home-icon">
-          <img src="img/home.png" alt="Home Icon" />
+      <div id="page-logo">
+        <div id="home">
+          <img src="img/홈버튼.PNG" alt="home" />
         </div>
-        <div class="login-status">
-          <img src="img/log.png" alt="Log Status" />
+        <div id="logo">
+          <img src="img/임시로고.PNG" alt="Logo" />
         </div>
-        <div class="profile-icon">
-          <img src="img/login.png" alt="Profile Icon" />
+        <div id="my">
+          <img src="img/마이페이지.PNG" alt="my" />
         </div>
       </div>
+      <div id="search">
+        <form action="" method="get">
+          <input
+            class="search-txt"
+            type="text"
+            name=""
+            placeholder="원하는 상품을 검색해보세요!"
+          />
+          <button class="search-btn" type="submit">
+            <img src="img/돋보기.png" />
+          </button>
+        </form>
+      </div>
     </header>
-
-    <div class="search-bar">
-      <input type="text" placeholder="원하는 상품을 검색해보세요!" />
-      <button class="search-button">
-        <img src="img/search.png" alt="Search Icon" />
-      </button>
-    </div>
 
     <div class="main-content">
       <p>로그인 시 찜하기 및 가격 변동 알림 받기가 가능합니다.</p>
