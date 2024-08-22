@@ -167,21 +167,40 @@ aside {
 @media only screen and (min-width: 1024px) {
     aside li.img {
         text-align: right; /* 768px 이상일 때 오른쪽 정렬 */
+        margin-top:6px;
     }
 }
 
 aside img {
-    width: 54%; /* 또는 원하는 비율 */
+    width: 58%; /* 또는 원하는 비율 */
 }
 
 
 section {
 }
 
-    section #category {
-        font-size: 16px;
-        color: #868E96;
-    }
+section #category {
+    font-size: 16px;
+    color: #868E96;
+    width:65%;
+    display:inline-block;
+}
+
+section #heart-container {
+    width:3%;
+    height:3%;
+    display: inline-block;
+}
+section #heart {
+    position: relative;
+    height: 25px;
+    border: none;
+    background-color: #ffffff;
+}
+section #heart img {
+    position: relative;
+    height: 25px;
+}
 
 #category a:link {
     color: #868E96;
@@ -213,6 +232,11 @@ section #prd-name {
         width: 70%; /* 너비 100% 설정 */
     }
 }
+@media only screen and (max-width: 1024px) {
+    section #category {
+        width: 95%; /* 너비 100% 설정 */
+    }
+}
 
 section #link_and_price {
     width: 100%;
@@ -241,10 +265,6 @@ section #musinsa-link {
         height: 80px;
     }
 
-    section #price hr,
-    section #price-avg hr {
-        width: 68%;
-    }
 
     section #price {
         height: 25px;
@@ -270,6 +290,7 @@ section #price-graph {
 
 section #graph {
     height: 200px;
+
 }
 
 section #date-range {
@@ -288,6 +309,10 @@ section #graph-inf {
         width: 68%;
     }
 }
+#chart-container {
+    width: 100%; /* 부모 요소에 맞게 조정 */
+    height: 200px; /* 원하는 높이 설정 */
+}
 
 section #price hr {
     margin-top: 30px;
@@ -296,8 +321,8 @@ section #price hr {
 section #price-avg {
     font-size: 18px;
     padding-top: 10px;
+    width:70%;
 }
-
     section #price-avg p {
         padding-bottom: 5px;
     }
@@ -305,7 +330,6 @@ section #price-avg {
     section #price-avg hr {
         margin-top: 2px;
     }
-
 
 
 main {
