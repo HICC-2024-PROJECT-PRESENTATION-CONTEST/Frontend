@@ -17,6 +17,11 @@ body {
 .clear {
     clear : both;
 }
+@media only screen and (max-width: 768px) {
+    .m_clear {
+        clear : both;
+    }
+}
 
 [class*="c_"] {
     float: left;
@@ -237,10 +242,74 @@ section .item {
     margin-top:10px;
     width:22%;
 }
-section img {
-    width:80%;
-    height:50%;
+section .prd-img {
+    border:solid 2px #ffffff;
 }
+section .img-wrapper {
+    position: relative;
+    width:100%;
+    height:0;
+    padding-bottom:100%;
+    margin-left:50px;
+    overflow:hidden;
+}
+section .image {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding:0 20px;
+    
+
+}
+section li {
+    padding:0 20px;
+    margin-left:50px;
+    width:500px;
+}
+
+@media only screen and (max-width: 768px) {
+    section .item {
+        width: 50%; /* 아이템의 너비를 100%로 설정 */
+        margin-bottom: 20px; /* 각 아이템 간의 세로 간격 */
+    }
+
+    section .img-wrapper {
+        position: relative;
+        width: 80%; /* 너비를 80%로 설정하여 좌우 여백 생성 */
+        height: 0;
+        padding-bottom: 80%; /* 너비에 맞게 정사각형 유지 */
+        margin: 0 auto; /* 중앙 정렬 */
+        margin-bottom: 20px; /* 각 아이템 간의 세로 간격 추가 */
+
+    }
+
+    section .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    section li {
+        padding: 0 20px;
+        margin-left: 10px;
+        width: auto; /* 텍스트 요소의 너비 자동 조정 */
+    }
+    
+}
+
+section .brand-name {
+    font-size:150%;
+}
+
+section .prd-name {
+    font-size:20%;
+}
+
 footer {
     text-align: center;
 }
