@@ -2,12 +2,16 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
 }
 ul {
     list-style-type: none;
 }
 body {
-    font-size : 100%;   
+    font-size : 100%;
+    background-color: #353535;
+    color: #fff;
+  
 }
 [class*="c_"] {
     float: left;
@@ -36,7 +40,7 @@ body {
 @media only screen and (min-width: 768px) {
     .c_1 {width: 8.33%; }
     .c_2 {width: 16.66%; }
-    .c_3 {width: 25%; }
+    .c_3 {width: 22%; }
     .c_4 {width: 33.33%; }
     .c_5 {width: 45%; }
     .c_6 {width: 50%; }
@@ -54,21 +58,22 @@ body {
     }
 }
 a:link{
-	color:black;
+	color:#000000;
     text-decoration: none;
 }
 a:visited {
-	color:black;
+	color:#000000;
     text-decoration: none;
 }
 a:hover {
-	color:black;
+	color:#000000;
 	text-decoration: none;
 }
 a:active{
-	color:black;
+	color:#000000;
 	text-decoration: none;	
 }
+
 
 header {
     height: 150px;
@@ -84,17 +89,25 @@ header #logo {
     font-size: 16px;
     margin-right: 10px;
     padding: 0 10px;
+    border-radius: 25px 0 0 25px;
+    background-color: #2c2c2c;
+    color: #fff;
+    border:none;
 }
 .search-btn {
     height: 35px;
     width: 100px; 
-    font-size: 16px;
     color: #ffffff;
-    background-color: #000000;
     border: none;
+    border-radius: 0 25px 25px 0;
+    background-color: #14b084;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
 
-aside {
+aside { 
+    
 }
 /* 기본 설정: 768px 미만일 때 */
 aside li {
@@ -118,76 +131,132 @@ aside img {
 
 
 section {
+
     
 }
 section #category {
     font-size:16px;
-    margin-bottom:20px;
+    color:#868E96;
+
+
 }
+
+#category a:link{
+	color:#868E96;
+    text-decoration: none;
+}
+#category a:visited {
+	color:#868E96;
+    text-decoration: none;
+}
+#category a:hover {
+	color:#868E96;
+	text-decoration: none;
+}
+#category a:active{
+	color:#868E96;
+	text-decoration: none;	
+}
+
 section #prd-name {
     font-size:26px;
     padding-bottom:5px;
 }
+@media only screen and (min-width: 768px) {
+    section #prd-name{
+        width: 70%; /* 너비 100% 설정 */
+    }
+}
+
+section #link_and_price {
+    width:100%;
+    height:80px;
+}
+
+section #musinsa-link {
+    font-size:12px;
+    text-align:center;
+    width:20%;
+    border:none;
+    border-radius:10px;
+    display:inline-block;
+    background-color: #ffffff;
+    margin-top:16px;
+
+}
+@media only screen and (min-width: 768px) {
+    section #musinsa-link {
+        width: 15%; /* 너비 100% 설정 */
+        height:25px;
+    }
+    section #link_and_price {
+        width:68%;
+        height:80px;
+    }
+    section #price hr,
+    section #price-avg hr {
+        width: 68%;
+    }
+    section #price {
+        height:25px;
+        line-height:28px;
+    }
+}
+
 section #price {
-    font-size:28px;
+    font-size:26px;
     padding-bottom:10px;
-    
+    text-align:right;
+    width:30%;
+    height:26px;
+    float:right;
+    display:inline-block;
+    margin-top:16px;
+}
+
+section #price-graph {
+    width:100%;
+}
+
+section #graph {
+    height:200px;
+}
+
+section #date-range {
+    display:inline-block;
+}
+
+section #graph-inf {
+    text-align:right;
+    display:inline-block;
+    float:right;
+}
+@media only screen and (min-width: 768px) {
+    section #price-graph {
+        width:68%;
+    }
 }
 section #price hr {
     margin-top:30px;
 }
 section #price-avg {
-    font-size:22px;
+    font-size:18px;
     padding-top:10px;
 }
 section #price-avg p {
     padding-bottom:5px;
 }
 section #price-avg hr {
-    margin-top:25px;
+    margin-top:2px;
 }
-section #button {
-    text-align:left;
-    margin-top:30px;
-}
-section #call {
-    font-size:16px;
-    text-align:center;
-    width:49%;
-    height:40px;
-    border:solid 2px #DC3936;
-    border-radius:3px;
-    display:inline-block;
-    background-color:#ffffff;
 
-}
-section #musinsa-link {
-    font-size:16px;
-    text-align:center;
-    width:49%;
-    height:40px;
-    border:solid 2px #DC3936;
-    border-radius:3px;
-    display:inline-block;
-    background-color: #DC3936;
-}
-@media only screen and (min-width: 768px) {
-    section #call,
-    section #musinsa-link {
-        width: 34%; /* 너비 100% 설정 */
-    }
-    section #price hr,
-    section #price-avg hr {
-        width: 68%;
-    }
-}
+
 
 main {
     text-align:left;
 }
 
-main #graph-inf {
-    
+main #recommend {
 }
 
 footer {

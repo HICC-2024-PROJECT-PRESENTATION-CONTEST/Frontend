@@ -12,7 +12,7 @@
     </div>
     <div id="search">
         <form action="" method="get">
-            <input class="search-txt" type="text" name="" placeholder="브랜드명 입력">
+            <input class="search-txt" type="text" name="" placeholder="상품명 or 상품 코드 검색">
             <button class="search-btn" type="submit">검색</button>
         </form>
     </div>
@@ -27,12 +27,20 @@
         <a href = "#">카테고리 1</a> > <a href = "#">카테고리 2</a> > <a href = "#">카테고리 3</a> > <a href = "#">카테고리 4</a>
     </div>
     <div id = "prd-name">
-        <a href = "#">브랜드명</a> 상품명 / 품번
+        <a href = "#">브랜드명</a> | ACG Cinder Cone 윈드프루프 재킷 M - 썬더 블루:데이브레이크:서밋 화이트 / DB0979-437
     </div>
-    <br>
-    <div id = "price">
-        <b>x,xxx원</b>
-        <hr>
+    <div id = "link_and_price">
+        <div id = "musinsa-link" style=" cursor: pointer;" onclick="window.open('#');">
+            <span style = "color:#000000; line-height:28px;"><b>구매링크</b></span>
+        </div>
+        <div id = "price">
+            <span style = "color:#ff7777";>X%  </span><b>x,xxx원</b>
+        </div>
+    </div>
+    <div id = "price-graph">
+        <div id = "date-range">3개월 / 전체</div>
+        <h4 id = "graph-inf">가격 그래프</h4>
+        <div id = "graph">그래프 넣을 공간</div>
     </div>
     <div id = "price-avg">
         <p style="line-height:30px;">역대최고가 <span style = "color:blue; line-height:20px;">x,xxx원</span></p>
@@ -40,21 +48,13 @@
         <p style='line-height:30px;'>역대최저가 <span style = "color:red; line-height:20px;">x,xxx원</span></p>
         <hr>
     </div>
-    <div id = "button">
-        <div id = "call" style=" cursor: pointer;" onclick="window.open('#');">
-            <span style = "color:#DC3936; line-height:35px;">찜하기</span>
-        </div>
-        <div id = "musinsa-link" style=" cursor: pointer;" onclick="window.open('#');">
-            <span style = "color:white; line-height:35px;">구매링크</span>
-        </div>
-    </div>
 </section>
-<main class = "c_12">
-    <h3 id = "graph-inf">가격 그래프</h4>
-    <div id = "graph">그래프 넣을 공간</div>
+<aside class = "c_3"></aside>
+<main class = "c_6">
     <h3 id = "recommend">추천 상품</h4>
     <div id = "ai-recommend">유사 상품 데이터 공간</div>
 </main>
+<aside class = "c_3"></aside>
 <footer class = "c_12">
     <p><a href = "#">개인정보처리방침</a> | <a href = "#">로그인</a><p>
     <p>email : <a href = "#">1234@gmail.com</a></p>
