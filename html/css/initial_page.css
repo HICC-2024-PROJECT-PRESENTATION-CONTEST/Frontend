@@ -33,7 +33,7 @@ header {
   margin-bottom: 1%;
 }
 
-.home-icon img,
+.home-button img,
 .profile-icon img {
   width: 90%;
   max-width: 50px;
@@ -54,7 +54,7 @@ header {
   border-radius: 25px 0 0 25px;
   border: none;
   background-color: #fff;
-  color: #fff;
+  color: #090000;
   font-size: 1em;
 }
 
