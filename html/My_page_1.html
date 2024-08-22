@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Page 1</title>
+    <link rel="stylesheet" href="css/My_page_1.css" />
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <script defer src="js/header_button.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="page-logo">
+        <div id="home">
+          <img src="img/홈버튼.PNG" alt="home" />
+        </div>
+        <div id="logo">
+          <img src="img/임시로고.PNG" alt="Logo" />
+        </div>
+        <div id="my">
+          <img src="img/마이페이지.PNG" alt="my" />
+        </div>
+      </div>
+      <div id="search">
+        <form action="" method="get">
+          <input
+            class="search-txt"
+            type="text"
+            name=""
+            placeholder="원하는 상품을 검색해보세요!"
+          />
+          <button class="search-btn" type="submit">
+            <img src="img/돋보기.png" />
+          </button>
+        </form>
+      </div>
+    </header>
+    <div id="myPage1">
+      <div class="toggle">
+        <label for="mailToggle">메일 알림 받기</label>
+        <input type="checkbox" id="mailToggle" checked />
+      </div>
+
+      <div class="product-list">
+        <div class="product-item">Item 1</div>
+        <div class="product-item">Item 2</div>
+        <div class="product-item">Item 3</div>
+        <!-- More items here -->
+      </div>
+
+      <div class="btn-more" onclick="loadMoreItems()">더 보기</div>
+
+      <button onclick="navigateToPage2()">회원 정보 및 이용약관</button>
+    </div>
+
+    <!-- <script>
+      // Function to handle toggle change
+      document
+        .getElementById('mailToggle')
+        .addEventListener('change', function () {
+          if (this.checked) {
+            console.log('메일 알림 ON');
+            // Logic to send mail notification
+          } else {
+            console.log('메일 알림 OFF');
+            // Logic to stop sending mail notifications
+          }
+        });
+
+      // Function to load more items
+      function loadMoreItems() {
+        console.log('더 보기 클릭됨');
+        // Logic to load more items in pagination format
+      }
+
+      // Function to navigate to My_page_2
+      function navigateToPage2() {
+        window.location.href = 'My_page_2.html'; // Assuming you have a separate HTML for My_page_2
+      }
+    </script> -->
+
+    <footer class="c_12">
+      <p><a href="#">개인정보처리방침</a></p>
+      <p>email : <a href="#">1234@gmail.com</a></p>
+    </footer>
+  </body>
+</html>

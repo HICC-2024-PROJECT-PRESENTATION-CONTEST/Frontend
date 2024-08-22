@@ -1,0 +1,24 @@
+.toggle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.toggle input[type='checkbox'] {
+  width: 50px;
+  height: 25px;
+}
+
+.product-list {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.product-item {
+  margin-right: 10px;
+}
+
+.btn-more {
+  margin-top: 20px;
+  cursor: pointer;
+}
