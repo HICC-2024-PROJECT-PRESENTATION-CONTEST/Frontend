@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-size: 100%;
+    background-color: #353535;
+    color: #fff;
+}
+.clear {
+    clear : both;
+}
+
+[class*="c_"] {
+    float: left;
+    padding: 10px;
+}
+/* 너비가 600픽셀 미만인 스마트폰을 위한 기본 설정 */
+[class*="c_"] {
+    width: 100%;
+}
+/* 너비가 600픽셀 이상인 태블릿을 위한 설정 */
+@media only screen and (min-width: 600px) {
+    .c_m_1 {
+        width: 8.33%;
+    }
+
+    .c_m_2 {
+        width: 16.66%;
+    }
+
+    .c_m_3 {
+        width: 25%;
+    }
+
+    .c_m_4 {
+        width: 33.33%;
+    }
+
+    .c_m_5 {
+        width: 41.66%;
+    }
+
+    .c_m_6 {
+        width: 50%;
+    }
+
+    .c_m_7 {
+        width: 58.33%;
+    }
+
+    .c_m_8 {
+        width: 66.66%;
+    }
+
+    .c_m_9 {
+        width: 75%;
+    }
+
+    .c_m_10 {
+        width: 83.33%;
+    }
+
+    .c_m_11 {
+        width: 91.66%;
+    }
+
+    .c_m_12 {
+        width: 100%;
+    }
+}
+/* 너비가 768픽셀 이상인 데스크톱 컴퓨터, 노트북 등 */
+@media only screen and (min-width: 768px) {
+    .c_1 {
+        width: 8.33%;
+    }
+
+    .c_2 {
+        width: 16.66%;
+    }
+
+    .c_3 {
+        width: 20%;
+    }
+
+    .c_4 {
+        width: 33.33%;
+    }
+
+    .c_5 {
+        width: 42%;
+    }
+
+    .c_6 {
+        width: 50%;
+    }
+
+    .c_7 {
+        width: 58%;
+    }
+
+    .c_8 {
+        width: 66.66%;
+    }
+
+    .c_9 {
+        width: 75%;
+    }
+
+    .c_10 {
+        width: 83.33%;
+    }
+
+    .c_11 {
+        width: 91.66%;
+    }
+
+    .c_12 {
+        width: 100%;
+    }
+}
+
+a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:active {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+header {
+    height: 150px;
+    margin: 2px;
+    text-align: center;
+    width: 100%;
+}
+
+header #logo {
+        width: 75%;
+        display: inline-block;
+    }
+
+header #home {
+        width: 10%;
+        display: inline-block;
+    }
+
+header #my {
+        width: 10%;
+        display: inline-block;
+    }
+
+@media only screen and (min-width: 768px) {
+header #logo {
+        width: 40%;
+}
+
+header #home {
+    width: 20%;
+}
+
+header #my {
+    width: 20%;
+}
+}
+
+#search {
+
+}
+
+
+.search-txt {
+    position:relative;
+    left:20px;
+    height: 50px;
+    width: 90%;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 0 20px;
+    border-radius: 25px;
+    color: #868E96;
+    border: none;
+}
+
+.search-btn {
+    position: relative;
+    right: 30px;
+    top: 7px;
+    height: 25px;
+    border: none;
+    background-color: #ffffff;
+}
+
+.search-btn img {
+    position: relative;
+    height: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+    .search-txt {
+        width: 50%; /* 너비 100% 설정 */
+    }
+}
+aside {
+    border:2px solid #ffffff;
+}
+section {
+    border:2px solid #ffffff;
+}
+section #prd-count {
+    text-align: center;
+    color:#868e96;
+}
+section .item {
+    float:left;
+    text-align:left;
+    margin-top:10px;
+    width:22%;
+}
+section img {
+    width:80%;
+    height:50%;
+}
+footer {
+    text-align: center;
+}
+
