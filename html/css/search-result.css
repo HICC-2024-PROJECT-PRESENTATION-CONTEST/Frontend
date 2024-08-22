@@ -17,7 +17,7 @@ body {
 .clear {
     clear : both;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     .m_clear {
         clear : both;
     }
@@ -32,7 +32,7 @@ body {
     width: 100%;
 }
 /* 너비가 600픽셀 이상인 태블릿을 위한 설정 */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
     .c_m_1 {
         width: 8.33%;
     }
@@ -82,7 +82,7 @@ body {
     }
 }
 /* 너비가 768픽셀 이상인 데스크톱 컴퓨터, 노트북 등 */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
     .c_1 {
         width: 8.33%;
     }
@@ -152,89 +152,15 @@ a:active {
     text-decoration: none;
 }
 
-
-header {
-    height: 150px;
-    margin: 2px;
-    text-align: center;
-    width: 100%;
-}
-
-header #logo {
-        width: 75%;
-        display: inline-block;
-    }
-
-header #home {
-        width: 10%;
-        display: inline-block;
-    }
-
-header #my {
-        width: 10%;
-        display: inline-block;
-    }
-
-@media only screen and (min-width: 768px) {
-header #logo {
-        width: 40%;
-}
-
-header #home {
-    width: 20%;
-}
-
-header #my {
-    width: 20%;
-}
-}
-
-#search {
-
-}
-
-
-.search-txt {
-    position:relative;
-    left:20px;
-    height: 50px;
-    width: 90%;
-    font-size: 16px;
-    margin-top: 10px;
-    padding: 0 20px;
-    border-radius: 25px;
-    color: #868E96;
-    border: none;
-}
-
-.search-btn {
-    position: relative;
-    right: 30px;
-    top: 7px;
-    height: 25px;
-    border: none;
-    background-color: #ffffff;
-}
-
-.search-btn img {
-    position: relative;
-    height: 25px;
-}
-
-@media only screen and (min-width: 768px) {
-    .search-txt {
-        width: 50%; /* 너비 100% 설정 */
-    }
-}
 aside {
-    border:2px solid #ffffff;
+
 }
 section {
-    border:2px solid #ffffff;
 }
 section #prd-count {
     text-align: center;
     color:#868e96;
+    margin-bottom:10px;
 }
 section .item {
     float:left;
@@ -250,7 +176,7 @@ section .img-wrapper {
     width:100%;
     height:0;
     padding-bottom:100%;
-    margin-left:50px;
+    margin-left:70px;
     overflow:hidden;
 }
 section .image {
@@ -264,12 +190,12 @@ section .image {
 
 }
 section li {
-    padding:0 20px;
-    margin-left:50px;
-    width:500px;
+    margin-left:90px;
+    width:90%;
+
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     section .item {
         width: 50%; /* 아이템의 너비를 100%로 설정 */
         margin-bottom: 20px; /* 각 아이템 간의 세로 간격 */
@@ -303,14 +229,17 @@ section li {
 }
 
 section .brand-name {
-    font-size:150%;
+    font-size:16px;
 }
 
 section .prd-name {
-    font-size:20%;
+    font-size:12px;
+    height:50px;
 }
-
-footer {
-    text-align: center;
+section .price{
+    margin-bottom:20px;
+    font-weight:bold;
 }
-
+section .discount-rate {
+    color:#ff7777;
+}
