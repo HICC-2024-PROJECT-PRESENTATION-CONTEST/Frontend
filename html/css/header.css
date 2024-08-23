@@ -37,7 +37,7 @@ header #my {
 #search {
 }
 
-.search-txt {
+#search-txt {
   position: relative;
   left: 20px;
   height: 50px;
@@ -50,7 +50,7 @@ header #my {
   border: none;
 }
 
-.search-btn {
+#search-btn {
   position: relative;
   right: 30px;
   top: 7px;
@@ -59,13 +59,13 @@ header #my {
   background-color: #ffffff;
 }
 
-.search-btn img {
+#search-btn img {
   position: relative;
   height: 25px;
 }
 
 @media only screen and (max-width: 1024px) {
-  .search-txt {
+  #search-txt {
     width: 90%; /* 너비 100% 설정 */
   }
 }
