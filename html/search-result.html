@@ -7,6 +7,8 @@
     <link rel = "stylesheet" type = "text/css" href = "css/search-result.css">
     <link rel = "stylesheet" type = "text/css" href = "css/header.css">
     <link rel = "stylesheet" type = "text/css" href = "css/footer.css">
+    <script defer src="js/header_button.js"></script>
+    <script src="js/search-result.js"></script>
 </head>
 <body>
 <header>
@@ -22,10 +24,10 @@
         </div>
     </div>
     <div id="search">
-        <form action="" method="get">
-            <input class="search-txt" type="text" name="" placeholder="원하는 상품을 검색해보세요!">
-            <button class="search-btn" type="submit">
-                <img src="img/돋보기.png">
+        <form id = "search-form" action="" method="get">
+            <input id="search-txt" type="text" name="" placeholder="원하는 상품을 검색해보세요!"/>
+            <button id="search-btn" type="submit">
+                <img src="img/돋보기.png" />
             </button>
         </form>
     </div>
@@ -110,6 +112,5 @@
     <p><a href = "#">개인정보처리방침</a><p>
     <p>email : <a href = "#">1234@gmail.com</a></p>
 </footer>
-<script src="js/search-result.js"></script>
 </body>
 </html>
