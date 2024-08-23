@@ -1,51 +1,62 @@
-const str = `[{
-		"Category": "아우터",
-		"Brand": "트릴리온",
-		"ProductName": "유니섹스 발마칸 더플 숏 코트 (BEIGE)",
-		"Price": 98000,
-		"DiscountRate": "24%",
-		"OriginalPrice": 128900,
-		"ProductURL": "https://www.musinsa.com/app/goods/2862908", 
-		"ImageURL":"https://image.msscdn.net/thumbnails/images/goods_img/20221014/2862908/2862908_1_big.jpg?w=780"
-	},
-	{
-		"Category": "아우터",
-		"Brand": "데밀",
-		"ProductName": "LOT.062 파이오니어 셀비지 데님자켓 인디고",
-		"Price": 223200,
-		"DiscountRate": "20%",
-		"OriginalPrice": 279000,
-		"ProductURL": "https://www.musinsa.com/app/goods/3510056", 
-		"ImageURL":"https://image.msscdn.net/thumbnails/images/goods_img/20230829/3510056/3510056_17147199908980_big.jpg?w=780"
-}]`;
+// 'query' 파라미터의 값을 가져옵니다.
+let searchQuery = urlParams.get('query');
 
-  let obj = JSON.parse(str);
+// fetch 요청을 보내고 응답을 처리합니다.
+fetch(`api/product/search?query=${searchQuery}`)
+  .then((response) => {
+    // 응답이 성공적이면 JSON으로 변환
+    if (!response.ok) {
+      throw new Error('Network response was not ok.');
+    }
+    return response.json();
+  })
+  .then((result) => {
+    // 'result'는 JSON 객체입니다. 이를 변수에 저장하고 사용합니다.
+    let data = result.data.content; // 데이터를 적절히 가공하여 저장
+    console.log(data); // 콘솔에 저장된 데이터 출력
 
-  let txt = ""
+    // 이후 데이터를 이용한 작업 수행
+    processData(data);
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+  });
 
-  let image = document.getElementsByClassName("image");
-  let brand_name = document.getElementsByClassName("brand-name");
-  let product_name = document.getElementsByClassName("prd-name");
-  let discount_rate = document.getElementsByClassName("discount-rate");
-  let price = document.getElementsByClassName("price");
-  document.getElementById("count").textContent = obj.length;
-  
-  for (i = 0; obj.length; i++) {
+// 데이터 처리 함수
+function processData(products) {
+  // 예를 들어, 제품 정보를 DOM에 표시하는 코드
+  let imageElements = document.getElementsByClassName("image");
+  let brandNameElements = document.getElementsByClassName("brand-name");
+  let productNameElements = document.getElementsByClassName("prd-name");
+  let discountRateElements = document.getElementsByClassName("discount-rate");
+  let priceElements = document.getElementsByClassName("price");
 
-		txt = obj[i]["ImageURL"];
-		image[i].src = txt;
+  // 제품 개수를 업데이트
+  document.getElementById("count").textContent = products.length;
 
-		txt = obj[i]["Brand"];
-		brand_name[i].innerHTML = txt;
+  // 제품 데이터를 DOM에 삽입
+  for (let i = 0; i < products.length; i++) {
+    const product = products[i];
 
-		txt = obj[i]["ProductName"];
-		product_name[i].innerHTML = txt;
+    if (imageElements[i]) {
+      imageElements[i].src = product.imageURL;
+    }
 
-		txt = obj[i]["DiscountRate"];
-		discount_rate[i].innerHTML = txt;
+    if (brandNameElements[i]) {
+      brandNameElements[i].innerHTML = product.brand;
+    }
 
-		txt = obj[i]["Price"];
-		price[i].innerHTML = `${txt.toLocaleString()}원`;
+    if (productNameElements[i]) {
+      productNameElements[i].innerHTML = product.productName;
+    }
 
+    if (discountRateElements[i]) {
+      discountRateElements[i].innerHTML = product.discountRate;
+    }
+
+    if (priceElements[i]) {
+      priceElements[i].innerHTML = `${product.price.toLocaleString()}원`;
+    }
   }
 
+}
