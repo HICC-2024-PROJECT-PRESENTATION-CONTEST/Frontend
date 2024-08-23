@@ -243,8 +243,9 @@ section .prd-name {
 section .price{
     margin-top:10px;
     margin-bottom:20px;
+    padding-left:5px;
     font-weight:bold;
 }
-section .discount-rate {
+.discount-rate {
     color:#ff7777;
 }
